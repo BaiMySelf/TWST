@@ -21,9 +21,9 @@ render(){
     }
     
     //use the translates to adjust viewing positions
-    translate([0, 0, 4])fanDuctBasePlate();
-    translate([0, 0, 5])fanDuct();
-    translate([0, 0, 7])fanDuctRotate();
+    translate([0, 0, 5])fanDuctBasePlate();
+    translate([0, 0, 7])fanDuct();
+    translate([0, 0, 9])fanDuctRotate();
     
     //translate([8,5,25])rotate([0, -90, 90])curved_cylinder(5.8, 5.5);
     
@@ -70,7 +70,7 @@ module fanDuct(){
 
 module fanDuctRotate(){
      //fitting for duct, interior diameter of 5.15 cm (slightly larger than 2 in)
-    translate([5,5,14.5])difference(){
+    translate([5,5,16])difference(){
         cylinder(h=2, d=5.8, center=true);
         cylinder(h=2, d1=5.5, d2=5.15, center=true);
     }
